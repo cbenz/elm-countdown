@@ -23,10 +23,12 @@ main =
 -- CONSTANTS
 
 
+playersUrl : String
 playersUrl =
     "/participants.json"
 
 
+pageSize : Int
 pageSize =
     20
 
@@ -154,6 +156,7 @@ view model =
         ]
 
 
+viewCountdown : Int -> Html Msg
 viewCountdown countdown =
     div
         [ style
@@ -174,6 +177,7 @@ viewCountdown countdown =
         ]
 
 
+viewPlayers : List Player -> String -> Int -> Html Msg
 viewPlayers players searchInput pageNumber =
     let
         matchedPlayers =
