@@ -25,7 +25,7 @@ main =
 
 playersUrl : String
 playersUrl =
-    "/participants.json"
+    "participants.json"
 
 
 pageSize : Int
